@@ -1,0 +1,12 @@
+﻿<html>
+<head>
+</head>
+<body>
+	<h2>欢迎使用 （咱们应用的名字。。。我想不出来）</h2>
+	<hr>
+	<p>孙头写出来的H5：（手动滑稽）</p>
+	{% for each in model_H5_introduce %}
+		<a href="{% url 'H5_introduce' each.pk %}">{{ each.title }}</a>
+	{% endfor %}
+</body>
+</html>
